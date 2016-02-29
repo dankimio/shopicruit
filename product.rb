@@ -2,7 +2,7 @@ require_relative 'variant'
 
 class Product
   attr_reader :id, :title, :handle, :body_html, :published_at,
-    :created_at, :updated_at, :vendor, :product_type, :tags, :variants
+              :created_at, :updated_at, :vendor, :product_type, :tags, :variants
 
   # Initialize product from JSON response
   def initialize(attributes = {})
