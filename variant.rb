@@ -8,5 +8,7 @@ class Variant
     attributes.each do |key, value|
       instance_variable_set("@#{key}", value)
     end
+
+    @price = @price.to_f
   end
 end
