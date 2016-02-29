@@ -6,5 +6,7 @@ class API
 
   def self.products
     HTTParty.get(PRODUCTS_URL, format: :json)['products'].map { |product| Product.new(product) }
+  rescue
+    []
   end
 end
